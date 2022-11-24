@@ -1,4 +1,5 @@
-# Edit at https://www.toptal.com/developers/gitignore?templates=r,vue,web,node,vuejs,linux,react,flask,macos,python,django,angular,eclipse,windows,pycharm,netbeans,reactnative,pycharm+iml,pycharm+all,visualstudio,visualstudiocode,git
+# Created by https://www.toptal.com/developers/gitignore/api/windows,macos,linux,vue,node,vuejs,react,flask,python,django,angular,eclipse,pycharm,pycharm+iml,pycharm+all,visualstudio,visualstudiocode,git,gitbook,tortoisegit,reactnative
+# Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,linux,vue,node,vuejs,react,flask,python,django,angular,eclipse,pycharm,pycharm+iml,pycharm+all,visualstudio,visualstudiocode,git,gitbook,tortoisegit,reactnative
 
 ### Angular ###
 ## Angular ##
@@ -11,42 +12,6 @@ app/**/*.js.map
 # dependencies
 node_modules/
 bower_components/
-
-### Terraform ###
-# Local .terraform directories
-**/.terraform/*
-
-# .tfstate files
-*.tfstate
-*.tfstate.*
-
-# Crash log files
-crash.log
-crash.*.log
-
-# Exclude all .tfvars files, which are likely to contain sensitive data, such as
-# password, private keys, and other secrets. These should not be part of version
-# control as they are data points which are potentially sensitive and subject
-# to change depending on the environment.
-#
-*.tfvars
-
-# Ignore override files as they are usually used to override resources locally and so
-# are not checked in
-override.tf
-override.tf.json
-*_override.tf
-*_override.tf.json
-
-# Include override files you do wish to add to version control using negated pattern
-# !example_override.tf
-
-# Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
-# example: *tfplan*
-
-# Ignore CLI configuration files
-.terraformrc
-terraform.rc
 
 # IDEs and editors
 .idea/
@@ -403,6 +368,24 @@ instance/*
 *_LOCAL_*.txt
 *_REMOTE_*.txt
 
+### GitBook ###
+# Node rules:
+## Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+## Dependency directory
+## Commenting this out is preferred by some people, see
+## https://docs.npmjs.com/misc/faq#should-i-check-my-node_modules-folder-into-git
+node_modules
+
+# Book build output
+_book
+
+# eBook build output
+*.epub
+*.mobi
+*.pdf
+
 ### Linux ###
 *~
 
@@ -451,14 +434,6 @@ Temporary Items
 # iCloud generated files
 *.icloud
 
-### NetBeans ###
-**/nbproject/private/
-**/nbproject/Makefile-*.mk
-**/nbproject/Package-*.bash
-nbbuild/
-nbdist/
-.nb-gradle/
-
 ### Node ###
 # Logs
 logs
@@ -488,7 +463,6 @@ coverage
 .nyc_output
 
 # Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
-.grunt
 
 # Bower dependency directory (https://bower.io/)
 bower_components
@@ -905,67 +879,16 @@ modules.xml
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 
-### R ###
-# History files
-.Rhistory
-.Rapp.history
+### Python Patch ###
+# Poetry local configuration file - https://python-poetry.org/docs/configuration/#local-configuration
+poetry.toml
 
-# Session Data files
-.RData
-.RDataTmp
-
-# User-specific files
-.Ruserdata
-
-# Example code in package build process
-*-Ex.R
-
-# Output files from R CMD build
-/*.tar.gz
-
-# Output files from R CMD check
-/*.Rcheck/
-
-# RStudio files
-.Rproj.user/
-
-# produced vignettes
-vignettes/*.html
-vignettes/*.pdf
-
-# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
-.httr-oauth
-
-# knitr and R markdown default cache directories
-*_cache/
-/cache/
-
-# Temporary files created by R markdown
-*.utf8.md
-*.knit.md
-
-# R Environment Variables
-.Renviron
-
-# pkgdown site
-docs/
-
-# translation temp files
-po/*~
-
-# RStudio Connect folder
-rsconnect/
-
-### R.Bookdown Stack ###
-# R package: bookdown caching files
-/*_files/
 
 ### react ###
 .DS_*
 **/*.backup.*
 **/*.back.*
 
-node_modules
 
 *.sublime*
 
@@ -1140,6 +1063,10 @@ google-services.json
 # Android Profiling
 *.hprof
 
+### TortoiseGit ###
+# Project-level settings
+/.tgitconfig
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
@@ -1159,12 +1086,6 @@ google-services.json
 .history
 .ionide
 
-# Support for Project snippet scope
-.vscode/*.code-snippets
-
-# Ignore code-workspaces
-*.code-workspace
-
 ### Vue ###
 # gitignore template for Vue.js projects
 #
@@ -1180,21 +1101,6 @@ test/
 # Recommended template: Node.gitignore
 
 yarn-error.log
-
-### Web ###
-*.asp
-*.cer
-*.csr
-*.css
-*.htm
-*.html
-*.js
-*.jsp
-*.php
-*.rss
-*.wasm
-*.wat
-*.xhtml
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -1593,6 +1499,7 @@ MigrationBackup/
 FodyWeavers.xsd
 
 # VS Code files for those working on multiple tools
+*.code-workspace
 
 # Local History for Visual Studio Code
 
@@ -1604,26 +1511,4 @@ FodyWeavers.xsd
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
 
-# Custom
-data/
-data/*
-*.pdf
-env*
-.env*
-!env.example
-!env.example*
-!.env.example
-!.env.example*
-zappa_settings.json
-.aws-sam/
-.aws-sam/*
-samconfig.toml
-template.yaml
-
-# Docker
-docker-compose.dev.yml
-docker-compose.yml
-Dockerfile
-Dockerfile.dev
-
-# End of https://www.toptal.com/developers/gitignore/api/r,vue,web,node,vuejs,linux,react,flask,macos,python,django,angular,eclipse,windows,pycharm,netbeans,reactnative,pycharm+iml,pycharm+all,visualstudio,visualstudiocode,git
+# End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,vue,node,vuejs,react,flask,python,django,angular,eclipse,pycharm,pycharm+iml,pycharm+all,visualstudio,visualstudiocode,git,gitbook,tortoisegit,reactnative
